@@ -10,6 +10,11 @@ Differences between supervised learning, unsupervised learning, and reinforcemen
 * Unsupervised learning is about extracting underlying structure in data. It's about the data representation
 
 ## Sequential Decision Making
+Key terms, in the example below a doctor is running a trial of (k=3) different medicines and monitoring patient outcomes
+- Doctor is the agent taking actions
+- Assigning a particular medicine to a patient is an action, there are 3 different medicines indicating 3 different actions
+- Patient's health after getting the medicine is the outcome from the action
+![Screenshot 2024-06-05 at 2 23 08 PM](https://github.com/unnitin/reinforcement-learning/assets/14156349/b29d9f97-f46f-4067-bacc-f34e3b667dca)
 
 
 

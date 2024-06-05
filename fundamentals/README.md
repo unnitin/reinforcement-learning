@@ -9,5 +9,5 @@ Differences between supervised learning, unsupervised learning, and reinforcemen
   *   A reward on the other hand, is like having someone who can identify what good behavior looks like but can't tell you exactly how to do it.
 * Unsupervised learning is about extracting underlying structure in data. It's about the data representation
 
-Open question: How to make multi model RL systems ? 
+Open question: 1) How to make multi model RL systems ?  2) Could such systems learn more quickly than the systems that purely rely on systematic information ? 
 

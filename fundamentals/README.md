@@ -17,6 +17,6 @@ Key terms, in the example below a doctor is running a trial of (k=3) different m
 ![Screenshot 2024-06-05 at 2 23 08 PM](https://github.com/unnitin/reinforcement-learning/assets/14156349/b29d9f97-f46f-4067-bacc-f34e3b667dca)
 
 
-
+ 
 Open question: 1) How to make multi model RL systems ?  2) Could such systems learn more quickly than the systems that purely rely on systematic information ? 
 

@@ -9,14 +9,14 @@ Differences between supervised learning, unsupervised learning, and reinforcemen
   *   A reward on the other hand, is like having someone who can identify what good behavior looks like but can't tell you exactly how to do it.
 * Unsupervised learning is about extracting underlying structure in data. It's about the data representation
 
-## Sequential Decision Making
+# Sequential Decision Making
 Key terms, in the example below a doctor is running a trial of (k=3) different medicines and monitoring patient outcomes
 - Doctor is the agent taking actions
 - Assigning a particular medicine to a patient is an action, there are 3 different medicines indicating 3 different actions
 - Patient's health after getting the medicine is the outcome from the action
 ![Screenshot 2024-06-05 at 2 23 08 PM](https://github.com/unnitin/reinforcement-learning/assets/14156349/b29d9f97-f46f-4067-bacc-f34e3b667dca)
 
-### Estimating Action Value 
+## Estimating Action Value 
 1. Sample average method - in the screenshot below, $Q*$ is not known to the user 
 ![Screenshot 2024-06-10 at 8 29 05 PM](https://github.com/unnitin/reinforcement-learning/assets/14156349/bbfb3a57-e2df-459e-9c91-a68864b228c5)
 
@@ -28,8 +28,10 @@ In an example scenario, the doctor runs a trial randomly assigning the drug to p
 $NewEstimate = OldEstimate + 1/n(Target - OldEstimate)$
 New Reward at time step t is the target for that timestep
 
-### Using Action Values to determine next action
-1. Greedy action search
+## Using Action Values to determine next action
+1. Epsilon-Greedy action search: Epsilon ($\varepsilon$) refers to the probability of exploring option space, we exploit with 1 - $\varepsilon$
+2. Optimistic Initial values: Encourages early exploitation as the initial estimate is significantly higher than the true estimated reward, the algorithm chooses to explore a lot early as a result
+3. 
 
 ## Methods to balance exploration and exploitation
 $x + y$     

@@ -16,8 +16,15 @@ Key terms, in the example below a doctor is running a trial of (k=3) different m
 - Patient's health after getting the medicine is the outcome from the action
 ![Screenshot 2024-06-05 at 2 23 08 PM](https://github.com/unnitin/reinforcement-learning/assets/14156349/b29d9f97-f46f-4067-bacc-f34e3b667dca)
 
-## Methods to balance exploration and exploitation
+Estimating Action Value 
 
+Using Action Values to determine next action
+
+
+## Methods to balance exploration and exploitation
+$x + y$     
+$\Gamma$     
+$\coloneqq$
 
 Open question: 1) How to make multi model RL systems ?  2) Could such systems learn more quickly than the systems that purely rely on systematic information ? 
 

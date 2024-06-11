@@ -17,9 +17,12 @@ Key terms, in the example below a doctor is running a trial of (k=3) different m
 ![Screenshot 2024-06-05 at 2 23 08 PM](https://github.com/unnitin/reinforcement-learning/assets/14156349/b29d9f97-f46f-4067-bacc-f34e3b667dca)
 
 Estimating Action Value 
+1. Sample average method - in the screenshot below, $Q*$ is not known to the user 
+![Screenshot 2024-06-10 at 8 29 05 PM](https://github.com/unnitin/reinforcement-learning/assets/14156349/bbfb3a57-e2df-459e-9c91-a68864b228c5)
+2. 
 
 Using Action Values to determine next action
-
+1. Greedy action search
 
 ## Methods to balance exploration and exploitation
 $x + y$     

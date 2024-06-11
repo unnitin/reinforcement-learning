@@ -24,6 +24,9 @@ In an example scenario, the doctor runs a trial randomly assigning the drug to p
 * As the trial progresses, estimates of `action value` approach $Q*$
 ![Screenshot 2024-06-10 at 8 38 16 PM](https://github.com/unnitin/reinforcement-learning/assets/14156349/11814536-0849-495e-aa21-e9fc519fc12d)
 
+2. Estimating sample average incrementally     
+$NewEstimate = OldEstimate + 1/n(Target - OldEstimate)$
+New Reward at time step t is the target for that timestep
 
 ### Using Action Values to determine next action
 1. Greedy action search

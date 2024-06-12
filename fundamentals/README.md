@@ -30,12 +30,12 @@ In an example scenario, the doctor runs a trial randomly assigning the drug to p
  * New Reward at time step t is the target for that timestep
 
 ## Using Action Values to determine next action
-Exploration v/ Exploitation - Broadly in `Reinforcement Learning`, we need to balance between exploration where we explore pay-off from different actions to understand their action-value distribution and exploitation where we use our estimated action-value distributions from different actions at any given point to take the best 
-1. Epsilon-Greedy action search: Epsilon ($\varepsilon$) refers to the probability of exploring option space, we exploit with 1 - $\varepsilon$
-2. Optimistic Initial values: Encourages early exploitation as the initial estimate is significantly higher than the true estimated reward, the algorithm chooses to explore a lot early as a result
-3. Upper Confidence Bound Interval - 
+Exploration v/ Exploitation - Broadly in `Reinforcement Learning`, we need to balance between exploration where we explore pay-off from different actions to understand their action-value distribution and exploitation where we use our estimated action-value distributions from different actions at any given point to take the best. Few methods that help balance this trade-off are listed below ... 
+1. **Epsilon-Greedy action search** Epsilon ($\varepsilon$) refers to the probability of exploring option space, we exploit with 1 - $\varepsilon$
+2. **Optimistic Initial values** Encourages early exploitation as the initial estimate is significantly higher than the true estimated reward, the algorithm chooses to explore a lot early as a result
+3. **Upper Confidence Bound Interval**
 
-## Methods to balance exploration and exploitation
+## Lorem Ipsum
 $x + y$     
 $\Gamma$     
 $\coloneqq$

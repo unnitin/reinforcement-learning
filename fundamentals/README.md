@@ -3,11 +3,11 @@
 2. Reward function to incentivize/dis-incentivize behaviors
 
 Differences between supervised learning, unsupervised learning, and reinforcement learning?
-* Supervised learning: We assume the learner has access to labeled examples giving the correct answer.
-* RL: The reward gives the agent some idea of how good or bad its recent actions were.
+* **Supervised learning** We assume the learner has access to labeled examples giving the correct answer.
+* **Reinforcement Learning** The reward gives the agent some idea of how good or bad its recent actions were.
   *   You can think of supervised learning as requiring a teacher that helps you by telling you the correct answer.
   *   A reward on the other hand, is like having someone who can identify what good behavior looks like but can't tell you exactly how to do it.
-* Unsupervised learning is about extracting underlying structure in data. It's about the data representation
+* **Unsupervised learning** is about extracting underlying structure in data. It's about the data representation
 
 # Sequential Decision Making
 Key terms, in the example below a doctor is running a trial of (k=3) different medicines and monitoring patient outcomes
@@ -17,18 +17,20 @@ Key terms, in the example below a doctor is running a trial of (k=3) different m
 ![Screenshot 2024-06-05 at 2 23 08 PM](https://github.com/unnitin/reinforcement-learning/assets/14156349/b29d9f97-f46f-4067-bacc-f34e3b667dca)
 
 ## Estimating Action Value 
-1. Sample average method - in the screenshot below, $Q*$ is not known to the user 
+1. **Sample average method**     
+In the screenshot below, $Q*$ is not known to the user 
 ![Screenshot 2024-06-10 at 8 29 05 PM](https://github.com/unnitin/reinforcement-learning/assets/14156349/bbfb3a57-e2df-459e-9c91-a68864b228c5)
 
 In an example scenario, the doctor runs a trial randomly assigning the drug to patients and recording the outcome (0,1 - failure, success) 
-* As the trial progresses, estimates of `action value` approach $Q*$
+ * As the trial progresses, estimates of `action value` approach $Q*$
 ![Screenshot 2024-06-10 at 8 38 16 PM](https://github.com/unnitin/reinforcement-learning/assets/14156349/11814536-0849-495e-aa21-e9fc519fc12d)
 
-2. Estimating sample average incrementally     
-$NewEstimate = OldEstimate + 1/n(Target - OldEstimate)$      
-New Reward at time step t is the target for that timestep
+2. **Estimating sample average incrementally**     
+ * $NewEstimate = OldEstimate + 1/n(Target - OldEstimate)$      
+ * New Reward at time step t is the target for that timestep
 
 ## Using Action Values to determine next action
+Exploration v/ Exploitation - Broadly in `Reinforcement Learning`, we need to balance between exploration where we explore pay-off from different actions to understand their action-value distribution and exploitation where we use our estimated action-value distributions from different actions at any given point to take the best 
 1. Epsilon-Greedy action search: Epsilon ($\varepsilon$) refers to the probability of exploring option space, we exploit with 1 - $\varepsilon$
 2. Optimistic Initial values: Encourages early exploitation as the initial estimate is significantly higher than the true estimated reward, the algorithm chooses to explore a lot early as a result
 3. 

@@ -25,9 +25,11 @@ In an example scenario, the doctor runs a trial randomly assigning the drug to p
  * As the trial progresses, estimates of `action value` approach $Q*$
 ![Screenshot 2024-06-10 at 8 38 16 PM](https://github.com/unnitin/reinforcement-learning/assets/14156349/11814536-0849-495e-aa21-e9fc519fc12d)
 
-2. **Estimating sample average incrementally**     
- * $NewEstimate = OldEstimate + 1/n(Target - OldEstimate)$      
- * New Reward at time step t is the target for that timestep
+2. **Estimating sample average incrementally**
+ * Useful in cases where we are supporting an online experiment and data will accumulate overtime
+ * $NewEstimate = OldEstimate + \alpha (Target - OldEstimate)$      
+ * *NewReward* at time step *t* is the target for that timestep
+ * $\alpha$ is the step size in the general update case, for sample average method it is 1/n where n is the number of steps taken
 
 ## Using Action Values to determine next action
 Exploration v/ Exploitation - Broadly in `Reinforcement Learning`, we need to balance between exploration where we explore pay-off from different actions to understand their action-value distribution and exploitation where we use our estimated action-value distributions from different actions at any given point to take the best. Few methods that help balance this trade-off are listed below ... 

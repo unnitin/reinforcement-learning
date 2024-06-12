@@ -33,9 +33,18 @@ In an example scenario, the doctor runs a trial randomly assigning the drug to p
 
 ## Using Action Values to determine next action
 Exploration v/ Exploitation - Broadly in `Reinforcement Learning`, we need to balance between exploration where we explore pay-off from different actions to understand their action-value distribution and exploitation where we use our estimated action-value distributions from different actions at any given point to take the best. Few methods that help balance this trade-off are listed below ... 
-1. **Epsilon-Greedy action search** Epsilon ($\varepsilon$) refers to the probability of exploring option space, we exploit with 1 - $\varepsilon$
-2. **Optimistic Initial values** Encourages early exploitation as the initial estimate is significantly higher than the true estimated reward, the algorithm chooses to explore a lot early as a result
-3. **Upper Confidence Bound Interval**
+1. **Epsilon-Greedy action search** Epsilon ($\varepsilon$) refers to the probability of exploring option space, we exploit with probability 1 - $\varepsilon$
+   * If there are ties at the exploit step, they are broken randomly
+3. **Optimistic Initial values** Encourages early exploitation as the initial estimate is significantly higher than the true estimated reward, the algorithm chooses to explore a lot early as a result
+4. **Upper Confidence Bound Interval** We select actions with most uncertainity in their estimates
+   * The idea is that this incentivizes exploration to get the uncertainity in action-value distributions down over time
+   * Following formula is used to determine the action to be taken, $A_t = argmax(Q_t(a) + c \sqrt{\ln(t) / N_t(a)}$
+   * c is a user-specified parameter that controls weightage to upper bound of the estimate
+   * t is total time steps, $N_t(a)$ is total time steps for action `a`
+   * Note how uncertainity term is inversely proportional to $N_t(a)$
+   * $Q_t(a)$ controls exploitation, second term controls exploration
+   * 
+   * Method does not deal with non-stationary problems very well as in those cases the uncertainity in estimates can change over time 
 
 ## Lorem Ipsum
 $x + y$     

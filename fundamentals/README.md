@@ -38,12 +38,14 @@ Exploration v/ Exploitation - Broadly in `Reinforcement Learning`, we need to ba
 3. **Optimistic Initial values** Encourages early exploitation as the initial estimate is significantly higher than the true estimated reward, the algorithm chooses to explore a lot early as a result
 4. **Upper Confidence Bound Interval** We select actions with most uncertainity in their estimates
    * The idea is that this incentivizes exploration to get the uncertainity in action-value distributions down over time
-   * Following formula is used to determine the action to be taken, $A_t = argmax(Q_t(a) + c \sqrt{\ln(t) / N_t(a)}$
+   * Following formula is used to determine the action to be taken, $A_t = argmax(Q_t(a) + c \sqrt{\ln(t) / N_t(a)}$)
    * c is a user-specified parameter that controls weightage to upper bound of the estimate
    * t is total time steps, $N_t(a)$ is total time steps for action `a`
    * Note how uncertainity term is inversely proportional to $N_t(a)$
    * $Q_t(a)$ controls exploitation, second term controls exploration
    * Method does not deal with non-stationary problems very well as in those cases the uncertainity in estimates can change over time
 
-Open question: 1) How to make multi model RL systems ?  2) Could such systems learn more quickly than the systems that purely rely on systematic information ? 
+## Open questions
+1. How to make multi model RL systems ? (e.g. which can learn from text, audio and video data feeds)
+2. Could such systems learn more quickly than the systems that purely rely on systematic information ? 
 

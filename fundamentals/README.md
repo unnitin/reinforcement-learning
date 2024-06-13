@@ -43,12 +43,7 @@ Exploration v/ Exploitation - Broadly in `Reinforcement Learning`, we need to ba
    * t is total time steps, $N_t(a)$ is total time steps for action `a`
    * Note how uncertainity term is inversely proportional to $N_t(a)$
    * $Q_t(a)$ controls exploitation, second term controls exploration
-   * Method does not deal with non-stationary problems very well as in those cases the uncertainity in estimates can change over time 
-
-## Lorem Ipsum
-$x + y$     
-$\Gamma$     
-$\coloneqq$
+   * Method does not deal with non-stationary problems very well as in those cases the uncertainity in estimates can change over time
 
 Open question: 1) How to make multi model RL systems ?  2) Could such systems learn more quickly than the systems that purely rely on systematic information ? 
 
